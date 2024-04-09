@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel= "stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/787eac6c04.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id= "header">
+    <div class= "container">
+
+        <nav>
+
+            <img src= "Images/IMG_7897.JPG" class= "logo">
+            <ul id= "sidemenu">
+                <li><a href= "#header">Home</a></li>
+                <li><a href= "#about">About</a></li>
+                <li><a href= "#services">Services</a></li>
+                <li><a href= "#portfolio">Portfolio</a></li>
+                <li><a href= "#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick= "closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick= "openmenu()"></i>
+        </nav>
+        <div class=" header-text">
+            <p> Computer Engineering Student  </p>
+            <h1> Hi,  I am <span>Bisrat</span><br> Berhanu from Ethiopia </h1>
+            
+            
+        </div>
+
+    </div>
+</div>
+
+<!--------------------------about----------------->
+<div id="about">
+    <div class="container">
+
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/photo_full.JPG">
+            </div>
+            <div class="about-col-2">
+                <h1 class= sub-title> About me </h1>
+                <p> I am a fourth year Electrical and computer 
+                    Engineering student. I am a junior developer and  have experience in  machine learning </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span> Machine Learning</span><br>supervised learning, unsupervised learning</li>
+                        <li><span>Software development</span><br> python, Java, c++, HTML, css</li>
+                        <li><span>Data structures and algorithms</span><br> Effecient using python for data structures and algorithms</li>
+                        <li> <span> Collaboration</span><br> experienced in version control tools: Git and Github</li>
+                    </ul>
+                        
+                </div>
+                <div class="tab-contents" id= "experience">
+                    <ul>
+                        <li><span></span><br> experience </li>
+                        <li><span>Tutoring</span><br>a part time tutor for grade 12 students </li>
+                        <!-- <li><span>UI</span><br> experience</li>  -->
+                    </ul>
+                </div>
+                <div class="tab-contents" id= "education">
+                    <ul> 
+                        <li><span>Addis Ababa University </span><br>currently studying Electrical and Computer Engineering </li>
+                        <li><span>A2sv</span><br> Data structures and Algorithms </li>
+                        <li><span>Google IT support </span><br> IT support certification from google </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<!--------------------------services----------------->
+
+<div id="services">
+    <div class= "container">
+        <h1 class= sub-title>My services </h1>
+        <div class="services-list">
+            
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Application development </h2>
+                <p> 
+                    I have  experience in Software application design, 
+                    building and customization, using languages like java and python.</p>
+                <a href= "https://github.com/bisratberhanu/projects" target="_blank" > Learn More</a>    
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>machine learning</h2>
+                <p> I possess expertise in various machine learning algorithms, including model training, 
+                    and am proficient in deploying models on cloud platforms. </p>
+                <a href= "https://github.com/bisratberhanu/Building_a_Domain_Expert_Model" target="_blank"> Learn More</a>    
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Hardware Design </h2>
+                <p> I have expertise in hardware design using tools like Proteus, MATLAB, and Simulink, 
+                    as well as proficiency in signal analysis.</p>
+                <a href= "https://github.com/bisratberhanu/Proportional_Derivative_Controller" target="_blank"> Learn More</a>    
+            </div>
+        </div> 
+    </div>
+</div>
+<!--------------------------portfolio----------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class= "sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src= Images/machine_learning.jpg>
+                <div class="layer">
+                    <h3> Language model FineTuning </h3>
+                    <p> A simple example of fine tuning a large language model to be domain specific </p>
+                    <a href= "https://github.com/bisratberhanu/Building_a_Domain_Expert_Model" target="_blank"> <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src= Images/hardware_design.jpg>
+                <div class="layer">
+                    <h3> Random Number Generator Design</h3>
+                    <p> A random number generator design using proteus </p>
+                    <a href= "https://github.com/bisratberhanu/Random_number_Generator" target="_blank"> <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src= Images/signal_analysis.jpg>
+                <div class="layer">
+                    <h3>Echo Effect  </h3>
+                    <p> Echo effect simulation using matlab </p>
+                    <a href= "https://github.com/bisratberhanu/DSP-Echo-Effect" target="_blank"> <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href= "https://github.com/bisratberhanu" target="_blank" class = "btn">See more</a>
+    </div>
+</div>
+<!--------------------------contact----------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class= "sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>bisratbnegus@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+251963103351</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/bisrat-berhanu/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/BerhanuBisrat" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/bisre94/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://t.me/Bisreb" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+                <a href= "Images/MyResume.pdf" download class= "btn btn2"> Download Cv</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" >
+                    <input type="text" name= "Name" placeholder="Name" required>
+                    <input type="email" name= "Email" placeholder="Email" required>
+                    <textarea name= "Message" rows= "6" placeholder=" Your Message"></textarea>
+                    <button type="submit" class="btn btn2 "> Submit</button>
+                </form>
+                <span id= "msg"></span>
+
+            </div>
+                
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @Bisrat Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+        
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+        
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzL7fdUkA22Akb5-V4m2tcIkLzNz6yNx9IEWih4FS9GNeE-TtbvAKtyuEngHVw_100n/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML = "Thanks for your submission"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
